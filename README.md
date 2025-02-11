@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+# Countries App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como um desafio do site [Frontend Mentor](https://www.frontendmentor.io/). O objetivo foi aprimorar habilidades no consumo de APIs utilizando `fetch`, além de reforçar conceitos de desenvolvimento com `React` e `TypeScript`.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
+- **React** ⚛️ - Biblioteca para construção da interface
+- **TypeScript** 🦕 - Superset do JavaScript para tipagem estática
+- **Bootstrap** 🎨 - Framework CSS para estilização
+- **SASS** 🎭 - Pré-processador CSS para melhor organização dos estilos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📡 Consumo de API
+O projeto faz requisições à API [REST Countries](https://restcountries.com/) utilizando `fetch` para buscar informações sobre diversos países.
 
-## Expanding the ESLint configuration
+## 📌 Funcionalidades
+- Listagem de países com bandeiras, nomes e informações básicas
+- Filtro de países por região
+- Pesquisa de países por nome
+- Exibição detalhada de informações sobre cada país
+- Alternância entre tema claro e escuro
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🔧 Como Executar o Projeto
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/paolakossa/countries.git
+   ```
+2. Acesse o diretório do projeto:
+   ```bash
+   cd countries
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+4. Execute o projeto:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+## 📷 Preview
+https://countries-6uijzf4kt-paolakossas-projects.vercel.app/
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📄 Licença
+Este projeto foi feito para fins de estudo e prática.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
+Projeto criado por **[Paola Kossa]** 🚀
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
