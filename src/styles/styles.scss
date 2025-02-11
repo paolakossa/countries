@@ -1,0 +1,154 @@
+@import "bootstrap/scss/functions";
+@import "_theme.scss";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  overflow: scroll !important;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden !important;
+  background-color: $very-light-gray !important;
+  color: $very-dark-blue-text !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: $very-dark-blue !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: $dark-blue !important;
+  color: white !important;
+}
+
+.dark-mode .card {
+  background-color: $dark-blue !important;
+  color: white !important;
+}
+
+.dark-mode input,
+.dark-mode .page-link,
+.dark-mode .navbar-text,
+.dark-mode .input-group-text {
+  background-color: $dark-blue !important;
+  color: white !important;
+}
+.dark-mode select {
+  background-color: $dark-blue !important;
+  color: white !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 20px;
+  border: 1px solid white;
+}
+.dark-mode input::placeholder {
+  color: white !important;
+}
+
+.dark-mode .card-body {
+  background-color: $dark-blue !important;
+  color: white !important;
+  border-radius: 20px !important;
+}
+
+.dark-mode .dark {
+  color: white !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.dark-mode .dark-border {
+  background-color: $dark-blue !important;
+  color: white !important;
+}
+
+.form-control-search {
+  border-radius: 0px !important;
+  border: 1px solid $gray-400 !important;
+  height: 50px !important;
+}
+.input-width {
+  width: 450px;
+}
+.form-select {
+  width: 250px !important;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+}
+.card-hover:hover {
+  cursor: pointer;
+}
+.card-size {
+  width: 300px;
+  height: 300px;
+}
+.btn-size {
+  width: 125px;
+}
+.page-link {
+  background-color: $very-light-gray !important;
+  color: $very-dark-blue-text !important;
+  &:focus,
+  &:active {
+    border-color: $very-dark-blue-text !important;
+  }
+}
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack

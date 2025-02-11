@@ -1,0 +1,46 @@
+$dark-blue: hsl(209, 23%, 22%);
+$very-dark-blue: hsl(207, 26%, 18%);
+$very-dark-blue-text: hsl(200, 15%, 8%);
+$dark-gray: hsl(0, 0%, 52%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+$theme-colors: (
+  "dark-blue": $dark-blue,
+  "very-dark-blue": $very-dark-blue,
+  "very-dark-blue-text": $very-dark-blue-text,
+  "dark-gray": $dark-gray,
+  "very-light-gray": $very-light-gray,
+  "white": $white,
+);
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "light-blue": hsl(200, 100%, 50%),
+    "light-red": hsl(0, 100%, 63%),
+    "light-yellow": hsl(34, 100%, 50%),
+    "light-cyan": hsl(170, 100%, 50%),
+    "light-orange": hsl(14, 100%, 55%),
+    "light-green": hsl(125, 67%, 44%),
+  )
+);
+//// Typography
+
+$font-weight-light: 300 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bolder: 800 !default;
+
+$h6-font-size: 16px !default;
+$h7-font-size: 14px !default;
+
+$font-sizes: (
+  6: $h6-font-size,
+  7: $h7-font-size,
+) !default;
+
+$display-font-sizes: (
+  1: 72px,
+  2: 64px,
+  3: 58px,
+  4: 52px,
+) !default;
