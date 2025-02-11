@@ -6,7 +6,7 @@ Este projeto foi desenvolvido como um desafio do site [Frontend Mentor](https://
 - **React** ⚛️ - Biblioteca para construção da interface
 - **TypeScript** 🦕 - Superset do JavaScript para tipagem estática
 - **Bootstrap** 🎨 - Framework CSS para estilização
-- **SASS** 🎭 - Pré-processador CSS para melhor organização dos estilos
+- **SCSS** 🎭 - Pré-processador CSS para melhor organização dos estilos
 
 ## 📡 Consumo de API
 O projeto faz requisições à API [REST Countries](https://restcountries.com/) utilizando `fetch` para buscar informações sobre diversos países.
